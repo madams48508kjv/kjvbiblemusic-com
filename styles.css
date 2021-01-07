@@ -1,0 +1,56 @@
+/* MAIN */
+main.mainContent{
+    margin: 15vw;
+    margin-top: 125px;
+    text-align: center;
+    width: 70vw;
+}
+main.mainContent section.mainSection1{
+    background-color: rgba(0, 0, 0, 0.644);
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px double rgb(0, 195, 255);
+}
+main.mainContent section.mainSection1 span{
+    margin: 0 2%;
+}
+main.mainContent section.mainSection1 a{
+    color: white;
+}
+/* main.mainContent section.section.mainSection2{
+    
+} */
+main.mainContent section.mainSection2 div.linkDropdown{
+    position: relative;
+    top: 10px;
+    right: 100px;
+    background-color: rgba(0, 0, 0, 0.739);
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px double rgb(0, 195, 255);
+}
+main.mainContent section.mainSection2 div.linkDropdown span{
+    display: inline-block;
+    margin: 0px 0;
+    width: 100%;
+}
+main.mainContent section.mainSection2 div.linkDropdown a{
+    display: inline-block;
+    width: 100%;
+    color: white;
+}
+
+/* ---------------------------Responsive Styles------------------------------------*/
+  /* Modern Browsers */
+  @media screen and (min-width: 25em){
+    html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+  }
+
+  /* Safari <8 and IE <11 */
+@media screen and (min-width: 25em){
+  /* html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); } */
+}
+@media screen and (min-width: 50em){
+/* html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); } */
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/navbar.css">
+<link rel="stylesheet" href="/css/styles-links.css">
+<link rel="icon" href="/img/Background-img.jpg" />
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="/index.html">Home</a>
+  <a href="/Hymnals/Hymnals.html">Hymnals</a>
+  <a href="/Song Lists/Song Lists.html">Song Lists</a>
+  <a href="/links.html">Links</a>
+  <a href="/Contact-Us.html" class="active">Contact Us</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h1><style>
+      h1 {
+          font-size: 10vw;
+          margin: 0;
+          font-style: italic;
+      }
+  </style>Contact Us</h1>
+  <ul class="Links">
+      <li><a href="mailto:madams48508@kjvbiblemusic.org">madams48508@kjvbiblemusic.org</a></li>
+  </ul>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
