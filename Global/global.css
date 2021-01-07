@@ -1,0 +1,182 @@
+/* Variables */
+:root{
+    /* background */
+    --backgroundIMG: url(/img/Background-img.jpg);
+    --backgroundColor: rgba(0, 0, 0, 0.219);    
+
+    /* header */
+    --siteTitleColor: rgb(134, 214, 251);
+    --siteTitleIconColor: rgb(214, 234, 238);
+    --siteTitleBorderColor: rgba(203, 243, 255, 0.733);
+    --siteTitleBackgroundColor: rgba(0, 0, 0, 0.842);
+}
+
+/* Resets */
+body,header,nav,main,footer,section,div,ul,li,span,a,p{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+}
+/* li{
+    list-style-type: none;
+} */
+
+/* Mobile Styles */
+/* BODY */
+body{
+    background-image: var(--backgroundIMG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+    background-blend-mode: overlay;
+    background-color: var(--backgroundColor);
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header.siteHeader{
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header.siteHeader section.headerSection{
+    margin: auto;
+    text-align: center;
+    margin-top: 1px;
+    border-bottom: 5px double var(--siteTitleBorderColor);
+    background-color: var(--siteTitleBackgroundColor);
+    padding: 8px;
+}
+header.siteHeader section.headerSection a{
+    color: var(--siteTitleColor);
+    font-size: 5vw;
+    font-weight: bold;
+    transition: 0.5s;
+}
+header.siteHeader section.headerSection i{
+    font-size: 25px;
+    color: var(--siteTitleIconColor);
+}
+
+/* NAV */
+nav.siteNav{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.842);
+    border-bottom: 2px solid rgba(203, 243, 255, 0.733);
+    position: fixed;
+    top: 68px;
+    left: 0;
+}
+/* Section1 / Theme Bible Verse */
+nav.siteNav section.navSection1{
+    display: inline-block;
+    padding: 8px;
+    color: rgb(167, 215, 255);
+    font-size: 18px;
+}
+/* Section2 / Notification Button */
+nav.siteNav section.navSection2{
+    position: relative;
+    float: left;
+    top: 5px;
+    left: 15px;
+}
+nav.siteNav section.navSection2 button{
+    background: none;
+    border: none;
+    font-size: 23px;
+    color: white;
+    transition: 0.5s;
+}
+/* Section3 / Toggle Button */
+nav.siteNav section.navSection3{
+    position: relative;
+    float: right;
+    top: 5px;
+    right: 15px;
+}
+nav.siteNav section.navSection3 button{
+    background: none;
+    border: none;
+    font-size: 23px;
+    color: white;
+    transition: 0.5s;
+}
+.hideLinks{
+    display: none;
+}
+
+/* FOOTER */
+/* Section1 / Useful Links */
+footer.siteFooter{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.842);
+    border-top: 3px double rgba(203, 243, 255, 0.733);
+    text-align: center;
+    color: rgb(39, 220, 251);
+    padding-bottom: 20px;
+}
+footer.siteFooter section.footerSection1 a{
+    color: rgb(174, 241, 250);
+    font-size: 20px;
+    transition: 0.5s;
+}
+footer.siteFooter section.footerSection1 label{
+    color: white;
+}
+
+/* Pseudo Classes */
+header.siteHeader section.headerSection a:hover{
+    color: rgba(134, 214, 251, 0.746);
+}
+header.siteHeader section.headerSection a:focus{
+    border: 1px dashed rgb(134, 214, 251);
+}
+nav.siteNav section.navSection2 button:hover{
+    color: rgb(169, 228, 255);
+    cursor: pointer;
+}
+nav.siteNav section.navSection3 button:hover{
+    color: rgb(169, 228, 255);
+    cursor: pointer;
+    transform: rotateZ(360deg);
+}
+nav.siteNav section.navSection4 div.navDiv a:hover{
+    text-decoration: underline;
+    color: rgb(154, 215, 255);
+}
+footer.siteFooter section.footerSection1 a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+/* Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #84b3be;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 43, 54);
+}
+
