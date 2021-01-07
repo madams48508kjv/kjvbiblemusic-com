@@ -1,0 +1,25 @@
+.Links {
+  list-style: none;
+  font-size: 4vw;
+  text-align: center;
+  padding: 0;
+  margin: 15px;
+}
+a:hover {
+  background-color: yellow;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: skyblue;
+}
+h1 {
+  text-align: center;
+  }
+body {
+  background-color: gray;
+  background-repeat: no-repeat;
+}
+.info {
+  font-size: 2.5vw;
+}

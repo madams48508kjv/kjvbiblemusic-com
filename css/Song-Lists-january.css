@@ -1,0 +1,83 @@
+/* ------------------------------ General Styles----------------------------------------- */
+body {
+  background-color: #353535;
+}
+  
+/* ------------------------------Month Name------------------------------------------- */
+h1 {
+  text-align: center;
+  font-size: 10vw;
+  color: #efdecd;
+}
+
+/* ----------------------------------Songs----------------------------------------- -----*/
+p {
+  text-align: center;
+  color: #efdecd;
+}
+
+/* ----------------------------------Dates--------------------------------------------- */
+h3 {
+  text-align: center;
+  color: #efdecd;
+}
+
+/* --------------------------------Buttons------------------------------------------- */
+a {
+  color: #220C10;
+  font-size: x-large;
+  text-decoration: none;
+  text-align: center;
+} 
+button {
+  background-color: #388697;
+  color: #220C10;
+  margin-bottom: 1em;
+  font-size: 8vw;
+  padding: 2vw;
+  border-radius: 5vw;
+  border-style: solid;
+  border-width: 1vw;
+  border-color: #A44200;
+  text-align: center;
+}
+button:hover {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 20px 15px  rgb(255, 255, 255);
+}
+div {
+  text-align: center;
+}
+
+/* ---------------------------Responsive Styles------------------------------------*/
+/* Modern Browsers */
+@media screen and (min-width: 25em){
+  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+
+/* Safari <8 and IE <11 */
+@media screen and (min-width: 25em){
+html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+@media screen and (min-width: 50em){
+html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+
+/* ----------------------------------Snowing------------------------------------ */
+#snowflakeContainer {
+position: absolute;
+left: 0px;
+top: 0px;
+display: none;
+}
+
+.snowflake {
+position: fixed;
+background-color:snow;
+user-select: none;
+z-index: 1000;
+pointer-events: none;
+border-radius: 50%;
+width: 10px;
+height: 10px;
+}
